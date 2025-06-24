@@ -157,7 +157,7 @@ Use the tool to get the latest information, then output only the final answer in
     }
 )
 
-    user_input = st.text_input("Enter city name for weather (e.g., 'Panvel')", key="agent_input")
+    user_input = st.text_input("Enter city name for weather", key="agent_input")
     if st.button("Get Weather") and user_input:
         with st.spinner("Thinking..."):
             try:
