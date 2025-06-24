@@ -67,9 +67,9 @@ def rephrase_output(text: str) -> str:
  
 # --- Streamlit UI ---
 st.set_page_config(page_title="LangChain + Neva-22B", page_icon="🤖")
-st.title("🤖 LangChain + NVIDIA Neva-22B Demo")
-st.sidebar.title("Choose a Demo")
-mode = st.sidebar.radio("Demo", ["Basic Chat", "RAG (PDF Q&A)", "Agent"])
+st.title("🤖 ChatBOT for Personal Purposes")
+st.sidebar.title("Choose a Model")
+mode = st.sidebar.radio("Model", ["Basic Chat", "RAG (PDF Q&A)", "Agent"])
 
 base_llm = NevaLLM()
 wrapped_llm = NevaLangChainWrapper(base_llm)
